@@ -66,7 +66,7 @@ npm start
 ## Project Structure
 
 ```
-docs-remix/
+docs/
 ├── app/
 │   ├── components/          # Reusable UI components
 │   │   ├── Navbar.tsx      # Main navigation bar

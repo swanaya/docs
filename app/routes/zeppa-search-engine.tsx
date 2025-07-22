@@ -395,8 +395,8 @@ export default function ZeppaSearchEnginePage() {
               <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
                 <code className="text-sm text-gray-800 dark:text-gray-200">
                   # Clone the repository<br/>
-                  git clone https://github.com/ketivee/zeppa-search-engine.git<br/>
-                  cd zeppa-search-engine<br/><br/>
+                  git clone https://github.com/KetiveeAI/ZepraSearch<br/>
+                  cd ZepraSearch<br/><br/>
                   # Install dependencies<br/>
                   npm install<br/><br/>
                   # Build C++ components<br/>
@@ -488,7 +488,7 @@ export default function ZeppaSearchEnginePage() {
                 <code className="text-sm text-gray-800 dark:text-gray-200">
 {`
 // Search for content
-const response = await fetch('https://api.zeppa.com/search', {
+const response = await fetch('https://api.ketivee.com/search', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -516,7 +516,7 @@ const results = await response.json();
                 Get Involved
               </h3>
               <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
-                <li>• <a href="https://github.com/ketivee/zeppa-search-engine" className="text-blue-600 hover:underline">GitHub Repository</a></li>
+                <li>• <a href="https://github.com/KetiveeAI/ZepraSearch" className="text-blue-600 hover:underline">GitHub Repository</a></li>
                 <li>• <a href="https://discord.gg/ketivee" className="text-blue-600 hover:underline">Discord Community</a></li>
                 <li>• <a href="https://forum.ketivee.com" className="text-blue-600 hover:underline">Community Forum</a></li>
                 <li>• <a href="https://docs.ketivee.com" className="text-blue-600 hover:underline">Documentation</a></li>
@@ -597,7 +597,7 @@ const results = await response.json();
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://github.com/ketivee/zeppa-search-engine"
+                href="https://github.com/KetiveeAI/ZepraSearch"
                 className="inline-flex items-center space-x-2 px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 <CodeBracketIcon className="w-5 h-5" />

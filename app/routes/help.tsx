@@ -235,44 +235,22 @@ export default function HelpPage() {
                   {tutorial.description}
                 </p>
                 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <span className={`px-2 py-1 text-xs font-medium rounded-full ${
-                      tutorial.difficulty === 'Beginner' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' :
-                      tutorial.difficulty === 'Intermediate' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' :
-                      'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
-                    }`}>
-                      {tutorial.difficulty}
-                    </span>
-                    <span className="text-xs text-gray-500 dark:text-gray-400">
-                      ⏱️ {tutorial.estimatedTime}
-                    </span>
-                  </div>
-                  <div className="text-purple-600 dark:text-purple-400 group-hover:text-purple-700 dark:group-hover:text-purple-300">
-                    <PlayIcon className="w-4 h-4" />
-                  </div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className={`px-2 py-1 text-xs font-medium rounded-full ${
+                    tutorial.difficulty === 'Beginner' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' :
+                    tutorial.difficulty === 'Intermediate' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' :
+                    'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+                  }`}>
+                    {tutorial.difficulty}
+                  </span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">
+                    {tutorial.estimatedTime}
+                  </span>
                 </div>
-                
-                <div className="mt-3">
-                  <button 
-                    className="w-full px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      console.log('Button clicked for:', tutorial.href);
-                      window.location.href = tutorial.href;
-                    }}
-                  >
-                    View Tutorial
-                  </button>
-                </div>
-                
-                <div className="mt-3 flex flex-wrap gap-1">
+
+                <div className="flex flex-wrap gap-2 mb-4">
                   {tutorial.tags.slice(0, 3).map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded"
-                    >
+                    <span key={tag} className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded">
                       {tag}
                     </span>
                   ))}
@@ -282,6 +260,21 @@ export default function HelpPage() {
                     </span>
                   )}
                 </div>
+
+                <Link 
+                  to={tutorial.href}
+                  className={`mt-2 inline-block px-4 py-2 rounded text-white font-medium text-sm hover:opacity-90 transition-colors ${
+                    tutorial.color === 'orange' ? 'bg-orange-600 hover:bg-orange-700' :
+                    tutorial.color === 'blue' ? 'bg-blue-600 hover:bg-blue-700' :
+                    tutorial.color === 'green' ? 'bg-green-600 hover:bg-green-700' :
+                    tutorial.color === 'purple' ? 'bg-purple-600 hover:bg-purple-700' :
+                    tutorial.color === 'yellow' ? 'bg-yellow-600 hover:bg-yellow-700' :
+                    tutorial.color === 'indigo' ? 'bg-indigo-600 hover:bg-indigo-700' :
+                    'bg-gray-600 hover:bg-gray-700'
+                  }`}
+                >
+                  Read Tutorial
+                </Link>
               </div>
             </div>
           ))}

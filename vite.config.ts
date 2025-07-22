@@ -22,12 +22,13 @@ export default defineConfig({
     tsconfigPaths(),
   ],
   server: {
-    port: 5173,
+    port: Number(process.env.PORT) || 5173,
+    host: process.env.HOST || 'localhost',
     strictPort: true,
     hmr: {
       protocol: 'ws',
-      host: 'localhost',
-      port: 5173,
+      host: process.env.HOST || 'localhost',
+      port: Number(process.env.PORT) || 5173,
     },
     proxy: {
       '/api/account': 'http://localhost:8956',
