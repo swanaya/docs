@@ -21,4 +21,20 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  server: {
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost',
+      port: 5173,
+    },
+    proxy: {
+      '/api/account': 'http://localhost:8956',
+      '/api/auth': 'http://localhost:5689',
+    },
+  },
+  optimizeDeps: {
+    include: ['@remix-run/react', '@remix-run/node'],
+  },
 });

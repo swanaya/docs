@@ -1,5 +1,7 @@
 {
-  "name": "docs-remix",
+  "name": "ketivee-docs",
+  "version": "1.0.0",
+  "description": "RipkaAI Development Program Documentation - A modern React Remix website with dark theme",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -8,15 +10,25 @@
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "preview": "remix-serve ./build/server/index.js"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@radix-ui/react-slot": "^1.2.3",
     "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.16.8",
     "@remix-run/serve": "^2.16.8",
+    "@tailwindcss/typography": "^0.5.16",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "css-bundle": "^1.0.0",
+    "gsap": "^3.13.0",
     "isbot": "^4.1.0",
+    "lucide-react": "^0.522.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.16.8",
@@ -31,6 +43,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gsap": "^3.13.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.1.6",
@@ -39,5 +52,17 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  }
+  },
+  "keywords": [
+    "remix",
+    "react",
+    "documentation",
+    "ai",
+    "ketivee",
+    "ripkaai",
+    "dark-theme",
+    "tailwindcss"
+  ],
+  "author": "Ketivee AI Team",
+  "license": "MIT"
 }
