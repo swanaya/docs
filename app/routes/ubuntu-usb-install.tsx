@@ -27,8 +27,6 @@ export default function UbuntuUSBInstallPage() {
         <nav className="flex items-center space-x-2 text-sm text-gray-500 mb-4">
           <Link to="/" className="hover:text-gray-700 dark:hover:text-gray-300">Home</Link>
           <span>/</span>
-          <Link to="/help" className="hover:text-gray-700 dark:hover:text-gray-300">Help & Tutorials</Link>
-          <span>/</span>
           <span className="text-gray-900 dark:text-white">Install Ubuntu via USB</span>
         </nav>
         
@@ -118,15 +116,15 @@ export default function UbuntuUSBInstallPage() {
                   <li>• Verify the download checksum</li>
                 </ul>
               </div>
-                             <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                 <div className="text-center">
-                   <ArrowDownTrayIcon className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                     Ubuntu Desktop 22.04 LTS<br />
-                     ~3.5 GB ISO file
-                   </p>
-                 </div>
-               </div>
+              <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
+                <div className="text-center">
+                  <ArrowDownTrayIcon className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    Ubuntu Desktop 22.04 LTS<br />
+                    ~3.5 GB ISO file
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -386,13 +384,12 @@ export default function UbuntuUSBInstallPage() {
       {/* Navigation */}
       <section className="flex justify-between items-center">
         <Link 
-          to="/help"
+          to="/"
           className="inline-flex items-center space-x-2 px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
         >
           <ArrowLeftIcon className="w-4 h-4" />
-          <span>Back to Help & Tutorials</span>
+          <span>Back to Home</span>
         </Link>
-        
         <div className="flex space-x-4">
           <button className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
             Rate this tutorial
@@ -413,4 +410,4 @@ function ClockIcon({ className }: { className?: string }) {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
   );
-} 
+}

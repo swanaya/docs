@@ -44,7 +44,7 @@ const tutorials: Tutorial[] = [
     estimatedTime: '30-45 minutes',
     icon: ComputerDesktopIcon,
     color: 'orange',
-    href: '/help/ubuntu-usb-install',
+    href: '/ubuntu-usb-install',
     tags: ['Ubuntu', 'USB', 'Installation', 'Linux']
   },
   {
@@ -56,7 +56,7 @@ const tutorials: Tutorial[] = [
     estimatedTime: '15-20 minutes',
     icon: CogIcon,
     color: 'blue',
-    href: '/help/docker-setup',
+    href: '/docker-setup',
     tags: ['Docker', 'Containers', 'DevOps']
   },
   {
@@ -68,7 +68,7 @@ const tutorials: Tutorial[] = [
     estimatedTime: '10-15 minutes',
     icon: BeakerIcon,
     color: 'green',
-    href: '/help/nodejs-install',
+    href: '/nodejs-install',
     tags: ['Node.js', 'JavaScript', 'npm']
   },
   {
@@ -80,7 +80,7 @@ const tutorials: Tutorial[] = [
     estimatedTime: '10-15 minutes',
     icon: DocumentTextIcon,
     color: 'purple',
-    href: '/help/git-setup',
+    href: '/git-setup',
     tags: ['Git', 'Version Control', 'GitHub']
   },
   {
@@ -92,7 +92,7 @@ const tutorials: Tutorial[] = [
     estimatedTime: '20-25 minutes',
     icon: SparklesIcon,
     color: 'yellow',
-    href: '/help/python-environment',
+    href: '/python-environment',
     tags: ['Python', 'Virtual Environment', 'pip']
   },
   {
@@ -104,7 +104,7 @@ const tutorials: Tutorial[] = [
     estimatedTime: '15-20 minutes',
     icon: WrenchScrewdriverIcon,
     color: 'indigo',
-    href: '/help/vscode-setup',
+    href: '/vscode-setup',
     tags: ['VS Code', 'Editor', 'Extensions']
   }
 ];
